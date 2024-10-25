@@ -1,0 +1,33 @@
+main {
+    display: grid;  /* Defines a grid layout / Define un diseño de grid */
+    gap: 10px;  /* Space between elements / Espacio entre los elementos */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header header header header"
+        "aside section section section section"
+        "footer footer footer footer footer";
+    row-gap: 0;  /* No space between rows / Sin espacio entre las filas */
+    column-gap: 0;  /* No space between columns / Sin espacio entre las columnas */
+    grid-template-rows: 20% 70% 10%;  /* Defines the height of rows / Define la altura de las filas */
+    height: 98vh;  /* Total height of the view / Altura total de la vista */
+}
+
+header {
+    grid-area: header;  /* Places the header in the grid area 'header' / Coloca el header en el área de grid 'header' */
+    border: 1px solid royalblue;  /* Adds border to header / Agrega un borde al header */
+}
+
+aside {
+    grid-area: aside;  /* Places the aside in the grid area 'aside' / Coloca el aside en el área de grid 'aside' */
+    border: 1px solid royalblue;  /* Adds border to aside / Agrega un borde al aside */
+}
+
+section {
+    grid-area: section;  /* Places the content section in the grid area 'section' / Coloca la sección en el área de grid 'section' */
+    border: 1px solid royalblue;  /* Adds border to content section / Agrega un borde a la sección de contenido */
+}
+
+footer {
+    grid-area: footer;  /* Places the footer in the grid area 'footer' / Coloca el footer en el área de grid 'footer' */
+    border: 1px solid royalblue;  /* Adds border to footer / Agrega un borde al footer */
+}
