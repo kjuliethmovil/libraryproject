@@ -14,7 +14,7 @@ import { TransactionService } from '../../../services/transaction/transaction.se
   templateUrl: './show-transaction.component.html',
   styleUrls: ['./show-transaction.component.css']
 })
-export class MostrarTransactionComponent implements OnInit {
+export class ShowTransactionComponent implements OnInit {
   public transactions: TransactionI[] = []; // Array to hold transactions / Array para almacenar transacciones
 
   constructor(private transactionService: TransactionService, private router: Router) { }

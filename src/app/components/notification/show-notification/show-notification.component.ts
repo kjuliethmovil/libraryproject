@@ -12,7 +12,7 @@ import { NotificationService } from '../../../services/notification/notification
   templateUrl: './show-notification.component.html',
   styleUrls: ['./show-notification.component.css']
 })
-export class MostrarNotificationComponent implements OnInit {
+export class ShowNotificationComponent implements OnInit {
   public notifications: NotificationI[] = []; // Array to hold notifications / Array para almacenar notificaciones
 
   constructor(private notificationService: NotificationService, private router: Router) { }
